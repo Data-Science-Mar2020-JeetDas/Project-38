@@ -1,0 +1,44 @@
+
+# Question - D : Available years data for which data is available
+
+years = df.groupby(['Period'])[['Location']].count()
+print("---------------------------------")
+print("\tAvailable years data : ")
+print("-------------------------------")
+print(years)
+print("-------------------------------")
+count = 0
+for row in range(len(years)): 
+        count = count+1
+print("total no. of years = ",count)        
+print("-----------------------------\n")
+
+---------------------------------
+        Available years data : 
+-------------------------------
+        Location
+Period          
+1995         186
+1996         186
+1997         186
+1998         187
+1999         187
+2000         188
+2001         188
+2002         189
+2003         190
+2004         190
+2005         191
+2006         191
+2007         191
+2008         191
+2009         191
+2010         191
+2011         191
+2012         192
+2013         192
+2014         192
+-------------------------------
+total no. of years =  20
+-----------------------------
+
