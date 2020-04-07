@@ -1,0 +1,385 @@
+#******************* Question - :plot-5: 16-19 (2011-2014) :  ********************
+
+
+df1 = df[df.Period == 2011]
+print("\n\n--------------[ OUTPUT for 2011 ]----------------------\n\n")
+print(df1[['Location','Period','First Tooltip']])
+
+df2 = df[df.Period == 2012]
+print("\n\n--------------[ OUTPUT for 2012 ]----------------------\n\n")
+print(df2[['Location','Period','First Tooltip']])
+
+df3 = df[df.Period == 2013]
+print("\n\n--------------[ OUTPUT for 2013 ]----------------------\n\n")
+print(df3[['Location','Period','First Tooltip']])
+
+df4 = df[df.Period == 2014]
+print("\n\n--------------[ OUTPUT for 2014 ]----------------------\n\n")
+print(df4[['Location','Period','First Tooltip']])
+
+i = np.arange(len(df1['Location']))
+print(i)
+
+i1 = np.arange(len(df2['Location']))
+print(i1)
+
+i2 = np.arange(len(df3['Location']))
+print(i2)
+
+i3 = np.arange(len(df4['Location']))
+print(i3)
+
+#--------------- plot ----------------------
+
+plt.title('Question - : slot-5 : 2011-2014')
+plt.xlabel("Country sl. no --- >")
+plt.ylabel("Number(%) --- >")
+
+plt.plot(i,df1['First Tooltip'],
+            marker=7,
+            markersize=10,
+            linestyle='dashed',
+            label="[1] 2011")
+
+plt.plot(i1,df2['First Tooltip'],
+            marker='*',
+            markersize=10,
+            linestyle='dashed',
+            label="[2] 2012")
+
+plt.plot(i2,df3['First Tooltip'],
+            marker='+',
+            markersize=10,
+            linestyle='dashed',
+            label="[3] 2013")
+
+plt.plot(i3,df4['First Tooltip'],
+            marker='o',
+            markersize=10,
+            linestyle='dashed',
+            label="[4] 2014")
+
+plt.legend()
+plt.show()
+
+
+
+
+--------------[ OUTPUT for 2011 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+3                                           Afghanistan    2011          10.17
+16                                              Albania    2011           9.85
+36                                              Algeria    2011           9.37
+56                                              Andorra    2011          19.31
+76                                               Angola    2011           5.58
+96                                  Antigua and Barbuda    2011          15.18
+116                                           Argentina    2011          11.82
+136                                             Armenia    2011           7.40
+156                                           Australia    2011          17.65
+176                                             Austria    2011          16.18
+196                                          Azerbaijan    2011           3.66
+216                                             Bahamas    2011          16.30
+236                                             Bahrain    2011           8.67
+256                                          Bangladesh    2011           7.46
+276                                            Barbados    2011          10.12
+296                                             Belarus    2011          12.99
+316                                             Belgium    2011          14.95
+336                                              Belize    2011          13.41
+356                                               Benin    2011          13.35
+376                                              Bhutan    2011          11.79
+396                    Bolivia (Plurinational State of)    2011          11.06
+416                              Bosnia and Herzegovina    2011          14.43
+436                                            Botswana    2011           8.75
+456                                              Brazil    2011           8.24
+476                                   Brunei Darussalam    2011           6.27
+496                                            Bulgaria    2011          11.02
+516                                        Burkina Faso    2011          12.83
+536                                             Burundi    2011          13.58
+556                                          Cabo Verde    2011          10.02
+576                                            Cambodia    2011           6.82
+                                                ...     ...            ...
+3208                                              Sudan    2011          11.80
+3228                                           Suriname    2011          11.89
+3248                                             Sweden    2011          19.26
+3268                                        Switzerland    2011          21.39
+3288                               Syrian Arab Republic    2011           4.80
+3308                                         Tajikistan    2011           6.23
+3328                                           Thailand    2011          13.63
+3348          The former Yugoslav Republic of Macedonia    2011          13.41
+3368                                        Timor-Leste    2011           2.38
+3383                                               Togo    2011           6.95
+3403                                              Tonga    2011          10.58
+3423                                Trinidad and Tobago    2011           7.42
+3443                                            Tunisia    2011          14.64
+3463                                             Turkey    2011          11.25
+3483                                       Turkmenistan    2011           8.68
+3503                                             Tuvalu    2011          18.00
+3523                                             Uganda    2011          16.17
+3543                                            Ukraine    2011          11.63
+3563                               United Arab Emirates    2011           8.69
+3583  United Kingdom of Great Britain and Northern I...    2011          16.20
+3603                        United Republic of Tanzania    2011          13.90
+3623                           United States of America    2011          19.46
+3643                                            Uruguay    2011          20.95
+3663                                         Uzbekistan    2011           8.99
+3683                                            Vanuatu    2011          13.98
+3703                 Venezuela (Bolivarian Republic of)    2011           8.83
+3723                                           Viet Nam    2011          10.41
+3743                                              Yemen    2011           4.30
+3763                                             Zambia    2011          11.13
+3783                                           Zimbabwe    2011           7.59
+
+[191 rows x 3 columns]
+
+
+--------------[ OUTPUT for 2012 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+2                                           Afghanistan    2012          11.67
+15                                              Albania    2012           9.71
+35                                              Algeria    2012           9.99
+55                                              Andorra    2012          18.88
+75                                               Angola    2012           5.57
+95                                  Antigua and Barbuda    2012          17.16
+115                                           Argentina    2012           8.74
+135                                             Armenia    2012           7.44
+155                                           Australia    2012          17.31
+175                                             Austria    2012          16.30
+195                                          Azerbaijan    2012           3.81
+215                                             Bahamas    2012          15.13
+235                                             Bahrain    2012           9.35
+255                                          Bangladesh    2012           6.92
+275                                            Barbados    2012          10.69
+295                                             Belarus    2012          13.21
+315                                             Belgium    2012          14.85
+335                                              Belize    2012          12.47
+355                                               Benin    2012          10.17
+375                                              Bhutan    2012           7.79
+395                    Bolivia (Plurinational State of)    2012          11.33
+415                              Bosnia and Herzegovina    2012          14.71
+435                                            Botswana    2012          10.76
+455                                              Brazil    2012           6.86
+475                                   Brunei Darussalam    2012           6.07
+495                                            Bulgaria    2012          11.54
+515                                        Burkina Faso    2012          11.69
+535                                             Burundi    2012          14.06
+555                                          Cabo Verde    2012           9.63
+575                                            Cambodia    2012           7.26
+                                                ...     ...            ...
+3207                                              Sudan    2012          11.65
+3227                                           Suriname    2012          12.06
+3247                                             Sweden    2012          19.16
+3267                                        Switzerland    2012          22.01
+3287                               Syrian Arab Republic    2012           4.80
+3307                                         Tajikistan    2012           7.49
+3327                                           Thailand    2012          13.67
+3347          The former Yugoslav Republic of Macedonia    2012          13.31
+3367                                        Timor-Leste    2012           2.07
+3382                                               Togo    2012           7.38
+3402                                              Tonga    2012          14.13
+3422                                Trinidad and Tobago    2012           7.76
+3442                                            Tunisia    2012          14.16
+3462                                             Turkey    2012          10.77
+3482                                       Turkmenistan    2012           8.68
+3502                                             Tuvalu    2012          17.31
+3522                                             Uganda    2012          14.34
+3542                                            Ukraine    2012          11.77
+3562                               United Arab Emirates    2012           8.70
+3582  United Kingdom of Great Britain and Northern I...    2012          16.21
+3602                        United Republic of Tanzania    2012          15.92
+3622                           United States of America    2012          20.08
+3642                                            Uruguay    2012          21.33
+3662                                         Uzbekistan    2012           9.58
+3682                                            Vanuatu    2012          13.55
+3702                 Venezuela (Bolivarian Republic of)    2012           5.91
+3722                                           Viet Nam    2012          12.66
+3742                                              Yemen    2012           3.93
+3762                                             Zambia    2012          11.35
+3782                                           Zimbabwe    2012           9.69
+
+[192 rows x 3 columns]
+
+
+--------------[ OUTPUT for 2013 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+1                                           Afghanistan    2013          10.59
+14                                              Albania    2013           9.76
+34                                              Algeria    2013           9.95
+54                                              Andorra    2013          22.32
+74                                               Angola    2013           7.42
+94                                  Antigua and Barbuda    2013          16.29
+114                                           Argentina    2013           7.72
+134                                             Armenia    2013           7.27
+154                                           Australia    2013          17.31
+174                                             Austria    2013          16.33
+194                                          Azerbaijan    2013           3.50
+214                                             Bahamas    2013          13.45
+234                                             Bahrain    2013          10.58
+254                                          Bangladesh    2013           5.55
+274                                            Barbados    2013          10.70
+294                                             Belarus    2013          13.91
+314                                             Belgium    2013          15.10
+334                                              Belize    2013          13.42
+354                                               Benin    2013           9.55
+374                                              Bhutan    2013           8.39
+394                    Bolivia (Plurinational State of)    2013          11.96
+414                              Bosnia and Herzegovina    2013          14.11
+434                                            Botswana    2013          10.44
+454                                              Brazil    2013           7.05
+474                                   Brunei Darussalam    2013           6.38
+494                                            Bulgaria    2013          10.95
+514                                        Burkina Faso    2013          12.72
+534                                             Burundi    2013          14.02
+554                                          Cabo Verde    2013           9.15
+574                                            Cambodia    2013           6.82
+                                                ...     ...            ...
+3206                                              Sudan    2013          11.65
+3226                                           Suriname    2013          11.84
+3246                                             Sweden    2013          19.03
+3266                                        Switzerland    2013          22.56
+3286                               Syrian Arab Republic    2013           4.80
+3306                                         Tajikistan    2013           7.33
+3326                                           Thailand    2013          12.78
+3346          The former Yugoslav Republic of Macedonia    2013          13.21
+3366                                        Timor-Leste    2013           2.87
+3381                                               Togo    2013           8.41
+3401                                              Tonga    2013          13.71
+3421                                Trinidad and Tobago    2013           8.05
+3441                                            Tunisia    2013          14.16
+3461                                             Turkey    2013          10.50
+3481                                       Turkmenistan    2013           8.68
+3501                                             Tuvalu    2013          20.21
+3521                                             Uganda    2013          13.07
+3541                                            Ukraine    2013          12.02
+3561                               United Arab Emirates    2013           8.70
+3581  United Kingdom of Great Britain and Northern I...    2013          16.52
+3601                        United Republic of Tanzania    2013          13.44
+3621                           United States of America    2013          20.78
+3641                                            Uruguay    2013          20.86
+3661                                         Uzbekistan    2013           9.70
+3681                                            Vanuatu    2013          14.13
+3701                 Venezuela (Bolivarian Republic of)    2013           6.38
+3721                                           Viet Nam    2013          13.19
+3741                                              Yemen    2013           3.93
+3761                                             Zambia    2013          11.01
+3781                                           Zimbabwe    2013           9.59
+
+[192 rows x 3 columns]
+
+
+--------------[ OUTPUT for 2014 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+0                                           Afghanistan    2014          12.00
+13                                              Albania    2014           9.37
+33                                              Algeria    2014           9.90
+53                                              Andorra    2014          27.92
+73                                               Angola    2014           5.00
+93                                  Antigua and Barbuda    2014          18.08
+113                                           Argentina    2014           6.92
+133                                             Armenia    2014           7.04
+153                                           Australia    2014          17.31
+173                                             Austria    2014          16.27
+193                                          Azerbaijan    2014           3.88
+213                                             Bahamas    2014          14.76
+233                                             Bahrain    2014          10.47
+253                                          Bangladesh    2014           5.66
+273                                            Barbados    2014          10.92
+293                                             Belarus    2014          13.79
+313                                             Belgium    2014          15.10
+333                                              Belize    2014          13.81
+353                                               Benin    2014           9.55
+373                                              Bhutan    2014           8.03
+393                    Bolivia (Plurinational State of)    2014          11.75
+413                              Bosnia and Herzegovina    2014          14.11
+433                                            Botswana    2014           8.84
+453                                              Brazil    2014           6.78
+473                                   Brunei Darussalam    2014           6.47
+493                                            Bulgaria    2014          10.95
+513                                        Burkina Faso    2014          11.16
+533                                             Burundi    2014          13.19
+553                                          Cabo Verde    2014          11.73
+573                                            Cambodia    2014           6.13
+                                                ...     ...            ...
+3205                                              Sudan    2014          11.65
+3225                                           Suriname    2014          11.84
+3245                                             Sweden    2014          19.03
+3265                                        Switzerland    2014          22.70
+3285                               Syrian Arab Republic    2014           4.80
+3305                                         Tajikistan    2014           6.84
+3325                                           Thailand    2014          13.28
+3345          The former Yugoslav Republic of Macedonia    2014          12.89
+3365                                        Timor-Leste    2014           2.44
+3380                                               Togo    2014           7.85
+3400                                              Tonga    2014          13.50
+3420                                Trinidad and Tobago    2014           8.17
+3440                                            Tunisia    2014          14.16
+3460                                             Turkey    2014          10.50
+3480                                       Turkmenistan    2014           8.68
+3500                                             Tuvalu    2014          16.91
+3520                                             Uganda    2014          10.97
+3540                                            Ukraine    2014          10.80
+3560                               United Arab Emirates    2014           8.69
+3580  United Kingdom of Great Britain and Northern I...    2014          16.52
+3600                        United Republic of Tanzania    2014          12.31
+3620                           United States of America    2014          21.29
+3640                                            Uruguay    2014          20.77
+3660                                         Uzbekistan    2014          10.74
+3680                                            Vanuatu    2014          17.94
+3700                 Venezuela (Bolivarian Republic of)    2014           5.80
+3720                                           Viet Nam    2014          14.22
+3740                                              Yemen    2014           3.93
+3760                                             Zambia    2014          11.31
+3780                                           Zimbabwe    2014           8.49
+
+[192 rows x 3 columns]
+[  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125
+ 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+ 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161
+ 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179
+ 180 181 182 183 184 185 186 187 188 189 190]
+[  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125
+ 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+ 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161
+ 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179
+ 180 181 182 183 184 185 186 187 188 189 190 191]
+[  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125
+ 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+ 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161
+ 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179
+ 180 181 182 183 184 185 186 187 188 189 190 191]
+[  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125
+ 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+ 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161
+ 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179
+ 180 181 182 183 184 185 186 187 188 189 190 191]
